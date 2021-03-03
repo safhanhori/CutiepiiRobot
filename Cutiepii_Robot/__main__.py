@@ -51,17 +51,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Welcome user: {}, , I am cutest bot: Cutiepii! 
+Welcome user: {}, , Hello I am :) ALICE! 
 
-I am an Anime themed advance group management bot with a lot of Special Features.
+I am an Anime themed advance group management bot with a lot of Special Features
 
-You can also make my sister. [Cutiepii Repo](https://github.com/Rajkumar-27/CutiepiiRobot)
-
-Use /help to know my abilities [^_^](https://telegra.ph/file/d31755c8e0245be16c4f5.png).
+Use /help to know my abilities [^_^](https://telegra.ph/file/655a94dd9dac006eff5fb.jpg).
 """
 
 HELP_STRINGS = """
-[Cutie](https://telegra.ph/file/d0441d0d700f54b55c9a1.mp4) at your service.
+[ALICE](https://telegra.ph/file/91c9d0e60b696fea5c73b.mp4) at your service.
 I can help you with following functions in managing group.
 
 *Main* commands available:
@@ -79,8 +77,8 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/d31755c8e0245be16c4f5.png"
-CUTIEPINGIMG = "https://telegra.ph/file/ea42efe4fb0ccbb578fce.gif"
+SAITAMA_IMG = "https://telegra.ph/file/655a94dd9dac006eff5fb.jpg"
+CUTIEPINGIMG = "https://telegra.ph/file/91c9d0e60b696fea5c73b.mp4"
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -204,29 +202,29 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="Add Cutiepii to your group",
+                            text="Add ALICE  to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [                         
                        InlineKeyboardButton(
-                             text="Chat With Cutie Lovers",
-                             url="https://t.me/Hindi_K_Drama_1")
+                             text="Chat With ALICE  Lovers",
+                             url="https://t.me/Animeweebs2")
                     ],
                      [
                          InlineKeyboardButton(
                              text="Support Chat",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             url=f"https://t.me/Animeweebs2{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
                              text="Updates Channel",
-                             url="https://t.me/Techno_Ocean")
+                             url="https://t.me/Animeweebs2")
                   
                      ]]))
     else:
         update.effective_message.reply_video(
                 CUTIEPINGIMG)
         update.effective_message.reply_text(
-            "Cutie Cutie! \n<b>Queen in command! since:</b> <code>{}</code>".format(uptime),
+            "ALICE  ALICE ! \n<b>Queen in command! since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
                     
 
